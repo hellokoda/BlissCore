@@ -1,2 +1,3 @@
 # BlissCore
-Minecraft plugin to support my other Bliss plugins...
+**To-Do**
+None

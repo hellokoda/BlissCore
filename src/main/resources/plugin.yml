@@ -1,0 +1,28 @@
+name: BlissCore
+main: life.koda.BlissCore.main.Main
+version: 1.0
+author: Koda
+description: The server core of Bliss.
+website: https://koda.life/
+prefix: Bliss
+commands:
+  watch:
+    aliases: [w]
+    usage: /<command>
+    permission: aqua.command.staffmode
+  lunarstafftest:
+    aliases: []
+    usage: /<command>
+    permission: lunar.staffmods
+
+permissions:
+  aqua.command.staffmode:
+    description: Can use staff mode.
+    default: op
+  bliss.*:
+      description: Gives permission to use all bliss commands/functions
+      children:
+        - bliss.staff.chat_in_hub: true
+  bliss.staff.chat_in_hub:
+    description: Permission to bypass disabled chat in the hub
+    default: op
